@@ -1,0 +1,18 @@
+parameters:
+
+application:
+	errorPresenter: Error
+	mapping: App\Api\*\**Presenter
+
+database:
+	dsn: 'pgsql:host=postgres;dbname=whalebone'
+	user: 'postgres'
+	password: 'postgres'
+
+di:
+	export:
+		parameters: no
+		tags: no
+
+routing:
+	cache: true
